@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import Geom.Point3D;
 
 /**
+ * test MyCoords class.
  * @author Aviv Vexler
  *
  */
