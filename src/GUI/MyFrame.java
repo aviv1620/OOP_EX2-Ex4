@@ -200,12 +200,12 @@ public class MyFrame extends JFrame {
 		setVisible(true);
 
 		//Mouse
-		addMouseListener(new MouseAdapter() {
+		map.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				click(e.getX(),e.getY());
-
+				System.out.println(e.getX() + "," + e.getY());
 			}
 
 		});
@@ -269,10 +269,10 @@ public class MyFrame extends JFrame {
 	 * @return point in image
 	 */
 	private Point3D scaleToImg(Point3D p) {
-		double dx = p.x() / getWidth();
+		double dx = p.x() / map.getWidth();
 		dx = dx*Map.IMAGE_WIDTH;
 
-		double dy = p.y() / getHeight();
+		double dy = p.y() / map.getHeight();
 		dy = dy*Map.IMAGE_HEIGHT;
 		return new Point3D(dx,dy,0);
 	}
