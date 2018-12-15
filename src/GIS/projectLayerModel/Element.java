@@ -1,4 +1,4 @@
-package algorithms;
+package GIS.projectLayerModel;
 
 import Coords.MyCoords;
 import GIS.GIS_element;

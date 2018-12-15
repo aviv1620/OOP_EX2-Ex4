@@ -1,6 +1,8 @@
 package Geom;
 
 import java.io.Serializable;
+
+import GIS.packmanModel.Fruit;
 public class Point3D implements Geom_element, Serializable 
 {
 	/**
@@ -237,4 +239,11 @@ public final static int DOWN = 6, UP = 7;
 	/** transform from radians to angles */
 	public static double d2r(double a) { return Math.toRadians(a);}
 	////////////////////////////////////////////////////////////////////////////////
+
+	public void copy(Point3D p) {
+		this._x = p.x();
+		this._y = p.y();
+		this._z = p.y();
+		
+	}
 }

@@ -1,4 +1,4 @@
-package algorithms;
+package File_format;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,10 +8,11 @@ import java.util.Iterator;
 
 import javax.xml.bind.JAXBException;
 
-import File_format.Csv2kml;
 import File_format.kmlclass.Folder;
 import GIS.GIS_layer;
 import GIS.Meta_data;
+import GIS.projectLayerModel.Layer;
+import GIS.projectLayerModel.Project;
 
 /**
  * Get folder name.

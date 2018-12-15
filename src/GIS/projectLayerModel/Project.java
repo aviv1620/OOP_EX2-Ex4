@@ -1,4 +1,4 @@
-package algorithms;
+package GIS.projectLayerModel;
 
 import java.util.ArrayList;
 import GIS.GIS_layer;
