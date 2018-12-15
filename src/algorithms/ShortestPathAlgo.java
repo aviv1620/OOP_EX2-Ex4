@@ -2,39 +2,37 @@ package algorithms;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 
 import Coords.MyCoords;
 import GIS.packmanModel.Fruit;
 import GIS.packmanModel.Game;
-import GIS.packmanModel.Packman;
-import GIS.packmanModel.PatchA;
+import GIS.packmanModel.Patch;
 import GIS.packmanModel.PatchPackman;
 import Geom.Point3D;
+
 /**
- * 
- * @author aviv vexler
- *
- */
+ * calculate the faster patch that packman to packmen.
+ * @author aviv vexler*/
 public class ShortestPathAlgo {
+	
 	private MyCoords myCoords = new MyCoords();
 	private Game game;
-	private long timeToComplete;
-	//private ArrayList<ArrayList<Patch>> patchPackmans;
-	private PatchA patch;
+	private long timeToComplete;	
+	private Patch patch;
 
-
+	/**
+	 * run the algorithms.
+	 * @param game - game data structure.
+	 */
 	public ShortestPathAlgo(Game game) {
 		this.game = game;
 		runNaiveAlgorithms();
 	}
 
-	/**
-	 * jump to packman and go to closer fruit.
-	 */
+	/** jump to packman and go to closer fruit.*/
 	private void runNaiveAlgorithms() {
 		//make empty patch data structure and copy the fruit.
-		patch = new PatchA(game);		
+		patch = new Patch(game);		
 		ArrayList<Fruit> copyFruit = game.CopyPointerFruit();
 		
 		//while have fruit in the array.
@@ -66,14 +64,14 @@ public class ShortestPathAlgo {
 	/**
 	 * @return the patch
 	 */
-	public PatchA getPatch() {
+	public Patch getPatch() {
 		return patch;
 	}
 
 	/**
 	 * @param patch the patch to set
 aviv */
-	public void setPatch(PatchA patch) {
+	public void setPatch(Patch patch) {
 		this.patch = patch;
 	}
 

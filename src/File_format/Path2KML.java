@@ -7,14 +7,14 @@ import java.util.Date;
 import javax.xml.bind.JAXBException;
 
 import File_format.kmlclass.*;
-import GIS.packmanModel.PatchA;
+import GIS.packmanModel.Patch;
 import GIS.packmanModel.PatchPackman;
 import GIS.packmanModel.PatchPoint;
 /**
- * 
- * @author aviv vexlr
+ * Save patch moment in KML file.
+ * Possible to see in google earth timeline.
+ * @author Aviv Vexler
  * ms=seconds in my kml.
- *
  */
 public class Path2KML {
 	
@@ -26,7 +26,7 @@ public class Path2KML {
 	 * @param patch - patch
 	 * @param fileDictory dictory to csv file. Change the extension to kml and dsace file.
 	 */
-	public static void save(PatchA patch,String fileDictory) {
+	public static void save(Patch patch,String fileDictory) {
 		ArrayList<Folder> folders = new ArrayList<>(); 
 		for(int pi=0;pi < patch.getNumPackmens();pi++) {
 			PatchPackman patchPackman =  patch.getPatchPackman(pi);
@@ -60,7 +60,6 @@ public class Path2KML {
 		}
 		
 		//write kml.				
-		fileDictory = extensionsToKml(fileDictory);
 		try {
 			Csv2kml.writeKmlFile(folders, fileDictory);
 			System.out.println("patch save in: "+fileDictory);
@@ -68,18 +67,6 @@ public class Path2KML {
 			e.printStackTrace();
 		}
 		
-	}
-	
-	/**
-	 * Change lest 3 charter to kml.
-	 * @param fileDictory - dictory.
-	 * @return kml dictory.
-	 */
-	private static String extensionsToKml(String fileDictory) {
-		int length = fileDictory.length(); 
-		fileDictory = fileDictory.substring(0,length-3);
-		fileDictory += "kml";
-		return fileDictory; 
 	}
 	
 	/**

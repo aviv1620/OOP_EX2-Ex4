@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <Folder>
+            <name>patch packmen index: 0</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.21085983,32.10526801</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.21085983,32.10526801</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.21081179,32.10387558</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:34</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20965886,32.10349488</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:30</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20802554,32.10350531</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:07:03</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20654434,32.10276477</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:09:45</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 1</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20311757,32.10225369</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20311757,32.10225369</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.2042625,32.10279085</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:03</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20483896,32.10333843</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:24</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20542344,32.10354703</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:23</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20554353,32.10392252</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:05:06</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 2</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.21073173,32.10513241</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.21073173,32.10513241</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.21023533,32.10366698</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:49</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.21005919,32.10290558</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:15</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.2079695,32.103813</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:07:56</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20680856,32.10240493</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:11:06</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 3</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.2119327,32.10212332</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.2119327,32.10212332</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.21077176,32.10283778</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:15</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20961082,32.10273869</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:04</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20769728,32.10316112</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:07:10</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20583177,32.10404246</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:10:31</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 4</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.211068,32.10264482</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.211068,32.10264482</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.21077176,32.10283778</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:35</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20917847,32.10243101</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:11</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20752113,32.10247794</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:05:47</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20536739,32.10439187</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:10:41</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 5</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20913844,32.10543489</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20913844,32.10543489</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20892227,32.10531494</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:24</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20803355,32.10515327</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:01:49</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20720888,32.10412069</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:07</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20543945,32.10480908</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:07:10</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 6</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20889024,32.10463698</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20889024,32.10463698</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20856998,32.10510112</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:59</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20796149,32.10536709</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:03</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20677653,32.10446488</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:33</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20516723,32.10534623</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:07:33</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 7</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20391021,32.10251966</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20391021,32.10251966</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20459877,32.10315069</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:01:35</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.2045187,32.10355225</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:20</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20455073,32.10409461</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:20</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20448668,32.10451182</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:06</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 8</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20935462,32.10487688</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20935462,32.10487688</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20873011,32.10519499</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:01:08</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20799351,32.10437623</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:02</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20691264,32.1037087</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:05:07</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20436658,32.10520021</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:09:58</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 9</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.21015526,32.10497596</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.21015526,32.10497596</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.2089623,32.10396424</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:39</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20873011,32.10351053</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:33</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20737702,32.10278042</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:06:04</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20404632,32.10484558</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:12:32</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 10</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.21138826,32.10239971</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.21138826,32.10239971</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.21057961,32.1033645</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:11</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.2084739,32.10288472</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:05:36</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20688862,32.1031559</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:08:08</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20338179,32.10472564</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:14:21</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 11</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20347786,32.10241015</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20347786,32.10241015</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20487099,32.10290036</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:22</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20560759,32.10274391</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:33</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20586379,32.10318719</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:27</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20279731,32.10462655</coordinates>
+                </Point>
+                <styleUrl>#green</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:09:57</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 12</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20973893,32.104783</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20973893,32.104783</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20833779,32.10492381</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:12</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.20752914,32.10471521</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:03:31</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20668846,32.10400596</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:05:22</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 5</name>
+                <Point>
+                    <coordinates>35.20320564,32.10534102</coordinates>
+                </Point>
+                <styleUrl>#red</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:11:22</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>patch packmen index: 13</name>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 0</name>
+                <Point>
+                    <coordinates>35.20998713,32.10531494</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 1</name>
+                <Point>
+                    <coordinates>35.20998713,32.10531494</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:00:00</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 2</name>
+                <Point>
+                    <coordinates>35.20815364,32.10504376</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:02:55</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 3</name>
+                <Point>
+                    <coordinates>35.207353,32.10530451</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:04:15</when>
+                </TimeStamp>
+            </Placemark>
+            <Placemark>
+                <description>aviv vexler</description>
+                <name>fruit index: 4</name>
+                <Point>
+                    <coordinates>35.20595987,32.10493946</coordinates>
+                </Point>
+                <styleUrl>#yellow</styleUrl>
+                <TimeStamp>
+                    <when>1970-01-01T02:06:32</when>
+                </TimeStamp>
+            </Placemark>
+        </Folder>
+        <Style id="red">
+            <IconStyle>
+                <Icon>
+                    <href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="yellow">
+            <IconStyle>
+                <Icon>
+                    <href>http://maps.google.com/mapfiles/ms/icons/yellow-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="green">
+            <IconStyle>
+                <Icon>
+                    <href>http://maps.google.com/mapfiles/ms/icons/green-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+    </Document>
+</kml>

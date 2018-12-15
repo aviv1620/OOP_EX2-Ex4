@@ -2,10 +2,10 @@ package GIS.packmanModel;
 
 import java.util.Arrays;
 
-public class PatchA {
+public class Patch {
 	private final PatchPackman[] patchPackmans;
 	
-	public PatchA(Game game) {
+	public Patch(Game game) {
 		patchPackmans = new PatchPackman[game.countPackmens()];		
 		for(int i=0; i < patchPackmans.length;i++) {
 			patchPackmans[i] = new PatchPackman(game.getPackmen(i)); 

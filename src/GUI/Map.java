@@ -2,25 +2,35 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Random;
+
+import javax.imageio.ImageIO;
+import javax.swing.JPanel;
 
 import GIS.packmanModel.Fruit;
 import GIS.packmanModel.Game;
 import GIS.packmanModel.Packman;
-import GIS.packmanModel.PatchA;
+import GIS.packmanModel.Patch;
 import GIS.packmanModel.PatchPackman;
 import GIS.packmanModel.PatchPoint;
 import Geom.Point3D;
 
 /**
  * 
- * @author aviv vexlr
- *
+ * shoe the game {@link GIS.packmanModel.Game} data structure and 
+ * patch {@link GIS.packmanModel.Patch} data structure on screen.
+ * Method setPatchAndGame(Game,Patch) must celled before repaint.
+ * @author Aviv Vexler
  */
-public class Map {
+public class Map extends JPanel{
 
+	/** version 1 maybe forever*/
+	private static final long serialVersionUID = 1L;
+	
 	// polar bound points.
 	public static final double TOP_LEFT_X = 35.2025;
 	public static final double TOP_LEFT_Y = 32.1057;
@@ -31,6 +41,43 @@ public class Map {
 	public static final int IMAGE_WIDTH = 1433;
 	public static final int IMAGE_HEIGHT = 642;
 
+	//varible
+	private Game game;
+	private Patch patch;
+	private BufferedImage img1;
+	 
+	/**
+	 * load image to draw.
+	 * @throws IOException - {@link IOException}.
+	 */
+	public Map() throws IOException{
+		//image		
+		File imgFile = new File("Ariel1.png");
+		img1 = ImageIO.read(imgFile);				
+	}
+	
+	/**@param game - game data structure to draw.
+	 * @param patch - patch data structure to draw.*/
+	public void setGameAndPatch(Game game,Patch patch) {
+		this.game = game;
+		this.patch = patch;
+	}
+	
+	/**Calls the UI delegate's paint method, if the UI delegate is non-null.
+	 * @param g - the Graphics object to protect
+	 */
+	@Override
+	protected void paintComponent(Graphics g) {		
+		int width = getWidth();
+		int Height = getHeight();
+		
+		//map
+		g.drawImage(img1, 0, 0,width,Height, null);
+
+		//game and patch
+		paintGame(g, game,width,Height);
+		paintPatch(g, patch,width,Height);
+	}
 
 	/**
 	 * convert polar point to point on the image.
@@ -76,7 +123,7 @@ public class Map {
 	 * @param wWidth - window width.
 	 * @param wHeight - window height.
 	 */
-	public void paintGame(Graphics g,Game game,int wWidth,int wHeight){
+	private void paintGame(Graphics g,Game game,int wWidth,int wHeight){
 
 		if(game == null)
 			return;
@@ -123,7 +170,7 @@ public class Map {
 	 * @param wWidth - window width.
 	 * @param wHeight - window height.
 	 */
-	public void paintPatch(Graphics g,PatchA patchs,int wWidth,int wHeight){				
+	private void paintPatch(Graphics g,Patch patchs,int wWidth,int wHeight){				
 		if(patchs == null)
 			return;
 
@@ -153,11 +200,11 @@ public class Map {
 
 		}
 	}
-
+	
 	/**
 	 * 
 	 * @param i - index
-	 * @return unique color.if not hve more tjen 6 packmen.
+	 * @return unique color.if not have more ten 6 packman.
 	 */
 	private Color getColor(int i) {
 

@@ -49,7 +49,7 @@ public class Csv2Game {
 				double z = Double.parseDouble(userInfo[4]);
 				Point3D location = new Point3D(x,y,z);								
 				
-				int id = Integer.parseInt(userInfo[4]);
+				int id = Integer.parseInt(userInfo[1]);
 				
 				String type = userInfo[0];
 				if(type.equals("P")) {//parse packman.

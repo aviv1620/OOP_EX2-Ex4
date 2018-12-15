@@ -2,7 +2,6 @@ package Geom;
 
 import java.io.Serializable;
 
-import GIS.packmanModel.Fruit;
 public class Point3D implements Geom_element, Serializable 
 {
 	/**
