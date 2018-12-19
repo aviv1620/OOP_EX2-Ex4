@@ -27,7 +27,7 @@ public class Packman {
 	 */
 	@Override
 	public String toString() {
-		return "Packman [id=" + id + ", location=" + location + ", angale=" + angle + ", speed=" + speed + ", radius="
+		return "Packman [speed=" + speed + ", id=" + id + ", location=" + location + ", angle=" + angle + ", radius="
 				+ radius + "]";
 	}
 	

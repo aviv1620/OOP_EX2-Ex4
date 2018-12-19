@@ -32,8 +32,8 @@ public class Path2KML {
 			PatchPackman patchPackman =  patch.getPatchPackman(pi);
 			ArrayList<Placemark> placemarks = new ArrayList<Placemark>();
 			
-			for(int pointI=0;pointI < patchPackman.patchPoints.size();pointI++) {
-				PatchPoint patchPoint = patchPackman.patchPoints.get(pointI);
+			for(int pointI=0;pointI < patchPackman.getSize();pointI++) {
+				PatchPoint patchPoint = patchPackman.get(pointI);
 				
 				//#kml
 				//Point

@@ -179,17 +179,16 @@ public class Map extends JPanel{
 		for(int pi = 0;pi < patchs.getNumPackmens();pi++) {//packmenIndex
 
 			PatchPackman patchPackman =  patchs.getPatchPackman(pi);
-			ArrayList<PatchPoint> patchPoints = patchPackman.patchPoints;
 			//color
 			g.setColor( getColor(pi) );
 
-			for(int pointI=1; pointI < patchPoints.size();pointI++) {
+			for(int pointI=1; pointI < patchPackman.getSize();pointI++) {
 				//get a point and b point.
-				Point3D  aPoint= patchPoints.get(pointI-1).getLocation();
+				Point3D  aPoint= patchPackman.get(pointI-1).getLocation();
 				aPoint = polarPointToImage(aPoint);
 				aPoint = scalePoint(aPoint, wWidth, wHeight);
 
-				Point3D  bPoint= patchPoints.get(pointI).getLocation();
+				Point3D  bPoint= patchPackman.get(pointI).getLocation();
 				bPoint = polarPointToImage(bPoint);
 				bPoint = scalePoint(bPoint, wWidth, wHeight);
 

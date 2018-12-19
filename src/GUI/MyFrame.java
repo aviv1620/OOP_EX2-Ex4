@@ -205,14 +205,13 @@ public class MyFrame extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				click(e.getX(),e.getY());
-				System.out.println(e.getX() + "," + e.getY());
 			}
 
 		});
 
 		//cheat
 		if(CHEAT_1543693911932CSV) {
-			File file = new File("data/game_1543693911932.csv");
+			File file = new File("data/game_1543693911932_a.csv");
 			fileOpenCSV(file);
 			itemSort();			
 			//itemSaveKML();
@@ -457,8 +456,8 @@ public class MyFrame extends JFrame {
 						PatchPoint ap = null;//a point
 						PatchPoint bp = null;//b point
 
-						for(int i=0;i<patchPackman.patchPoints.size();i++) {
-							PatchPoint patchPoint = patchPackman.patchPoints.get(i);
+						for(int i=0;i<patchPackman.getSize();i++) {
+							PatchPoint patchPoint = patchPackman.get(i);
 
 							if(time > patchPoint.getTime())
 								ap = patchPoint;
@@ -473,7 +472,8 @@ public class MyFrame extends JFrame {
 						Packman packman = game.getPackmen(pi);	
 
 						if(bp == null) {//the packman finish the patch.
-							packman.location = ap.getLocation();
+							if(ap != null)
+								packman.location = ap.getLocation();
 						}else{
 							//find point in current time
 							double x,y;

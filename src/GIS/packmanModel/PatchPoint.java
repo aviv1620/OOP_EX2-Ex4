@@ -4,8 +4,8 @@ import Geom.Point3D;
 
 public class PatchPoint {
 	private Point3D location;
-	private long time;
-	public PatchPoint(Point3D location, long time) {
+	private int time;
+	public PatchPoint(Point3D location, int time) {
 		this.location = location;
 		this.time = time;
 	}
@@ -18,7 +18,7 @@ public class PatchPoint {
 	/**
 	 * @return the time
 	 */
-	public long getTime() {
+	public int getTime() {
 		return time;
 	}
 	/* (non-Javadoc)
