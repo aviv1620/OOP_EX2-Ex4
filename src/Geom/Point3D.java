@@ -87,7 +87,10 @@ public class Point3D implements Geom_element, Serializable
 public final static int ONSEGMENT = 0,  LEFT = 1, RIGHT = 2, INFRONTOFA = 3, BEHINDB = 4, ERROR = 5;
 public final static int DOWN = 6, UP = 7;
 
-/** return up iff this point is above the SEGMENT (not the line) */
+/** return up iff this point is above the SEGMENT (not the line) 
+ *  * @param a - point a
+ * @param b - point b
+ * @return pointLineTest2*/
     public int pointLineTest2(Point3D a, Point3D b) {
     	int flag = this.pointLineTest(a,b);
     	if(a._x < b._x ) {
@@ -121,9 +124,9 @@ public final static int DOWN = 6, UP = 7;
 
 	INFRONTOFA:  ��+��a---------b������                              <br>
         BEHINDB:  �����a---------b����+�                              <br>
-	ERROR: a==b || a==null || b == null;                               <br>
+	ERROR: a==b || a==null || b == null;    
+	                           <br>
     */
-
     public int pointLineTest(Point3D a, Point3D b) {
 
 	if(a== null || b==null || a.equalsXY(b)) return ERROR;

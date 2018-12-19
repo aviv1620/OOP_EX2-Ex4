@@ -112,7 +112,12 @@ public class MultiCSV {
 		return project;
 	}
 
-	/**test this class*/
+	/**test this class
+	 * @param args - not use
+	 * @throws IOException - Signals that an I/O exception of some sort has occurred.
+	 * @throws ParseException - Signals that an error has been reached unexpectedlywhile parsing.
+	 * @throws JAXBException - This is the root exception class for all JAXB exceptions.*/
+
 	public static void main(String[] args) throws IOException, ParseException, JAXBException {
 		
 		MultiCSV multiCSV = new MultiCSV("csvs");

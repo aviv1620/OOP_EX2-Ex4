@@ -110,7 +110,7 @@ public class Csv2kml {
 	 * write file
 	 * @param kml - kml
 	 * @param fileName - file name
-	 * @throws JAXBException
+	 * @throws JAXBException -This is the root exception class for all JAXB exceptions.
 	 */
 	private static void kmlToFile(Kml kml,String fileName) throws JAXBException {
 		// create JAXB context and instantiate marshaller
@@ -126,7 +126,7 @@ public class Csv2kml {
 	 * write kml file
 	 * @param folders - folder(kml)
 	 * @param fileName - file name
-	 * @throws JAXBException
+	 * @throws JAXBException - This is the root exception class for all JAXB exceptions.
 	 */
 	public static void writeKmlFile(ArrayList< Folder > folders,String fileName) throws JAXBException {
 		Kml kml = kmlCreate(folders);
@@ -135,7 +135,7 @@ public class Csv2kml {
 	/**
 	 * create kml class
 	 * @param folders - array of folders
-	 * @return
+	 * @return kml
 	 */
 	private static Kml kmlCreate(ArrayList< Folder > folders) {
 		Style style[] = kmlStyleCreate();
@@ -164,7 +164,8 @@ public class Csv2kml {
 
 	/**convert GIS_Layer to Placemarks(kml) in kml and return Folder(kml).
 	 * 
-	 * @param csvFile - file patch.
+	 * @param layer - layer.
+	 * @param folderName - folder name.
 	 * @return placemarks - Placemarks XmlRootElement.
 	 * @throws IOException - Signals that an I/O exception of some sort has occurred. 
 	 * @throws ParseException - Signals that an error has been reached unexpected while parsing.

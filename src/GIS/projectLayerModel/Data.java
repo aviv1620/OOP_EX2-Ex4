@@ -24,7 +24,7 @@ public class Data implements Meta_data {
 	}
 
 	/**
-	 * @see Meta_data#getUTC().
+	 * (@see Meta_data#getUTC()).
 	 */
 	@Override
 	public long getUTC() {
@@ -32,7 +32,7 @@ public class Data implements Meta_data {
 	}
 
 	/**
-	 * @see Meta_data#get_Orientation().
+	 * (@see Meta_data#get_Orientation()).
 	 */
 	@Override
 	public Point3D get_Orientation() {
@@ -40,7 +40,7 @@ public class Data implements Meta_data {
 	}
 
 	/**
-	 * @see Meta_data#toString().
+	 * (@see Meta_data#toString()).
 	 */
 	@Override
 	public String toString() {

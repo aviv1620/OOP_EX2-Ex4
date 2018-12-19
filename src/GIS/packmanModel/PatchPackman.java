@@ -42,7 +42,7 @@ public class PatchPackman {
 	/**
 	 * like push in stack data structure add new point.
 	 * calculate the time and cournet location is the lest point.
-	 * @param fruit
+	 * @param newLocation - new location
 	 * @return - time to go to new point.
 	 */
 	public long push(Point3D newLocation) {

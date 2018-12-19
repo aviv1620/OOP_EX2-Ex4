@@ -164,7 +164,7 @@ public class Map extends JPanel{
 	/**
 	 * draw patch {@link GIS.packmanModel.Patch} data structure on screen.
 	 * @param g - Graphics from JFrame
-	 * @param patch - patch {@link GIS.packmanModel.Patch} 
+	 * @param patchs - patch {@link GIS.packmanModel.Patch} 
 	 * @param wWidth - window width.
 	 * @param wHeight - window height.
 	 */

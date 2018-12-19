@@ -74,7 +74,7 @@ public class MyFrame extends JFrame {
 	 *  all the  buttons organize in method itemXXX.
 	 * @param w - Width screen.
 	 * @param h - Height screen.
-	 * @throws IOException
+	 * @throws IOException - Signals that an I/O exception of some sort has occurred.
 	 */
 	public MyFrame(int w,int h) throws IOException{
 		//file open 
