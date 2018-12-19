@@ -4,7 +4,7 @@ ex3 is "game" in style packmans. the board of game is Areial university map. Ins
 ex2 is system to get geography information and save it.
 Later this system make more thing.
 ## ex2
-
+![menu](https://raw.githubusercontent.com/aviv1620/OOP_EX2-Ex4/master/Manual.jpg)
 ### play the game
 Go to main method in **GUI.MyFrame** class.
 All buttons explained in manual [click hare](https://github.com/aviv1620/OOP_EX2-Ex4/wiki/Manual).
