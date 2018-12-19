@@ -1,6 +1,5 @@
 package algorithms;
 
-import java.awt.image.PackedColorModel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -146,24 +145,32 @@ public class ShortestPathAlgo {
 		b.push(f.getLocation());
 	}
 
+	/**
+	 * find the PatchPackman that 
+	 * the lest fruit is closer to ptt[i] and is slowest from prr[i]. 
+	 * @param i - index.
+	 * @param ptt - PatchPackman array shorted by total time.
+	 * @return optimal PatchPackman for balanceFruit.
+	 */
 	private PatchPackman optimalPatchPackman(int i, PatchPackman[] ptt) {
-
+		//copy pointer to new array
 		PatchPackman []f = new PatchPackman[i];
 
 		for (int index = 0; index < f.length; index++) {
 			f[index] = ptt[index];
 		}
 
+		//sort close to for.
 		comPLF.setLocation(ptt[i].cournetLocation);
-
 		Arrays.sort(f, comPLF);
 		
-		//fix byg
+		//fix bug in empty PatchPackman.
 		int a = 0;
 		while(a < f.length - 1 && f[a].getTotalTime() == 0) {
 			a++;
 		}
 
+		//return.
 		return f[a];
 	}
 
@@ -199,9 +206,8 @@ public class ShortestPathAlgo {
 		}		
 
 	}
-
+	/**the PatchPackman that finish lest is the total time*/
 	private void calculateTotalTime(){
-		//time
 		for(int pi=0;pi < patch.getNumPackmens();pi++) {
 			PatchPackman patchPackman = patch.getPatchPackman(pi);			
 			timeToComplete = Math.max(timeToComplete, patchPackman.getTotalTime());
@@ -242,10 +248,16 @@ vexle*/
 		return timeToComplete;
 	}
 
-
+	/**
+	 * Comparator for PatchPackman compare the lest fruit.
+	 * compare the close to far.
+	 * @author Aviv Vexler
+	 */
 	class ComparatorPLF implements Comparator<PatchPackman>{
 		private Point3D location;
-
+		/**
+		 * @param location location to compare
+		 */
 		private void setLocation(Point3D location) {
 			this.location = location;
 		}
@@ -262,9 +274,16 @@ vexle*/
 		}
 	}
 
+	/**
+	 * omparator for Fruit compare the close to far
+	 * @author Aviv Vexler
+	 *
+	 */
 	class ComparatorFruit implements Comparator<Fruit>{
 		private Point3D location;
-
+		/**
+		 * @param location location to compare
+		 */
 		private void setLocation(Point3D location) {
 			this.location = location;
 		}

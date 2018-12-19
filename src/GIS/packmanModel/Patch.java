@@ -2,10 +2,15 @@ package GIS.packmanModel;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
+/**
+ * store PatchPackman patches {@link PatchPackman}.
+ * @author Aviv Vexler
+ *
+ */
 public class Patch {
 	private final PatchPackman[] patchPackmans;
 	
+	/**compare time*/
 	private Comparator<PatchPackman> comparatorTime = new Comparator<PatchPackman>() {
 
 		@Override
@@ -17,6 +22,7 @@ public class Patch {
 	
 	};
 	
+	/**compare speed.*/
 	private Comparator<PatchPackman> comparatorSpeed = new Comparator<PatchPackman>() {
 
 		@Override
@@ -29,6 +35,10 @@ public class Patch {
 	
 	};
 	
+	/**
+	 * build the data structure.
+	 * @param game - to know how much packmans have in the game.
+	 */
 	public Patch(Game game) {
 		patchPackmans = new PatchPackman[game.countPackmens()];		
 		for(int i=0; i < patchPackmans.length;i++) {
@@ -36,6 +46,7 @@ public class Patch {
 		}
 	}
 	
+	/**@return Arrays withe new pointer that sorted by time.*/
 	public PatchPackman[] getPatchPackmanShorteTotalTime() {
 		//copy
 		PatchPackman copy[] = Arrays.copyOf(patchPackmans, patchPackmans.length);
@@ -43,6 +54,7 @@ public class Patch {
 		return copy;
 	}
 	
+	/**@return Arrays withe new pointer that sorted by speed.*/
 	public PatchPackman[] getPatchPackmanShorteSpeed() {
 		//copy
 		PatchPackman copy[] = Arrays.copyOf(patchPackmans, patchPackmans.length);
@@ -50,17 +62,17 @@ public class Patch {
 		return copy;
 	}
 	
+	/**@param index - index in the array.
+	 * @return index.*/
 	public PatchPackman getPatchPackman(int index) {
 		return patchPackmans[index];
 	}
 	
+	/** @return size of the array */
 	public int getNumPackmens() {
 		return patchPackmans.length;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "PatchA [patchPackmans=" + Arrays.toString(patchPackmans) + "]";

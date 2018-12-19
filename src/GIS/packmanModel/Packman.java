@@ -1,17 +1,26 @@
 package GIS.packmanModel;
 
 import Geom.Point3D;
-
-public class Packman {
-	
-	
+/**
+ * store Packman. see assignment description for more information.
+ * @author Aviv Vexler
+ *
+ */
+public class Packman {		
 	public final int id;
 	public Point3D location;
 	public double angle;
 	public int speed;
 	public int radius;
-	
-	
+
+	/**
+	 * make new Packman.
+	 * @param id - unique id.
+	 * @param location - location.
+	 * @param angale - angale.
+	 * @param speed - speed.
+	 * @param radius - radius.
+	 */
 	public Packman(int id,Point3D location, double angale, int speed, int radius) {
 		super();
 		this.id = id;
@@ -21,16 +30,12 @@ public class Packman {
 		this.radius = radius;
 	}
 
-
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "Packman [speed=" + speed + ", id=" + id + ", location=" + location + ", angle=" + angle + ", radius="
 				+ radius + "]";
 	}
-	
-	
-	
+
+
+
 }

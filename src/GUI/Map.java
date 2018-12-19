@@ -5,7 +5,6 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Iterator;
 
 import javax.imageio.ImageIO;
@@ -16,7 +15,6 @@ import GIS.packmanModel.Game;
 import GIS.packmanModel.Packman;
 import GIS.packmanModel.Patch;
 import GIS.packmanModel.PatchPackman;
-import GIS.packmanModel.PatchPoint;
 import Geom.Point3D;
 
 /**
@@ -194,6 +192,7 @@ public class Map extends JPanel{
 
 				//draw line a point to b point.
 				g.drawLine((int)aPoint.x(), (int)aPoint.y(),(int) bPoint.x(),(int) bPoint.y());
+				
 			}
 
 

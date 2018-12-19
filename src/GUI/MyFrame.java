@@ -303,8 +303,14 @@ public class MyFrame extends JFrame {
 			return;
 		if(file.isDirectory()) {//user selected multi CSV files.
 			fileOpenMultCSV(file);
-		}else if(file.isFile()) {//user selected one CSV file.
-			fileOpenCSV(file);
+		}else if(file.isFile()) {//user selected one CSV file.or KML file.
+			
+			if(file.getName().endsWith(".csv"))
+				fileOpenCSV(file);
+			else if(file.getName().endsWith(".kml")) {
+				Path2KML.save(patch,file.getPath());
+			}
+			
 		}else if(patch != null) {//user save kml.	
 			String pathFile = file.getPath();
 			if(!pathFile.endsWith(".kml"))

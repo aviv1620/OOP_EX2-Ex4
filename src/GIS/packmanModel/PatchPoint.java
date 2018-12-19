@@ -1,7 +1,11 @@
 package GIS.packmanModel;
 
 import Geom.Point3D;
-
+/**
+ * point in patch.
+ * @author Aviv Vexler
+ *
+ */
 public class PatchPoint {
 	private Point3D location;
 	private int time;
@@ -21,9 +25,7 @@ public class PatchPoint {
 	public int getTime() {
 		return time;
 	}
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
+
 	@Override
 	public String toString() {
 		return "PatchPoint [location=" + location + ", time=" + time + "]";

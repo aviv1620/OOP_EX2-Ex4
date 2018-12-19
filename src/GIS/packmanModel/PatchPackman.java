@@ -10,6 +10,10 @@ import Geom.Point3D;
 
 /**
  * @author avivasus
+ * route for packman.
+ * store list point on the map in start PatchPoint.
+ * data structure logic is stack.the totalTime calculate in this stack.
+ * another programmer can't interrupt the total time just get it. 
  *
  */
 public class PatchPackman {
@@ -23,6 +27,9 @@ public class PatchPackman {
 	
 	private int TotalTime = 0;
 	
+	/**
+	 * @param packmanPointer first point is packman it self.
+	 */
 	public PatchPackman(Packman packmanPointer) {
 		this.cournetLocation = packmanPointer.location;
 		this.packmanPointer = packmanPointer;
@@ -33,7 +40,7 @@ public class PatchPackman {
 	}
 
 	/**
-	 * add new point.
+	 * like push in stack data structure add new point.
 	 * calculate the time and cournet location is the lest point.
 	 * @param fruit
 	 * @return - time to go to new point.
@@ -57,7 +64,8 @@ public class PatchPackman {
 	}
 	
 	/**
-	 * 
+	 * like pop in stack data structure remove an element from the stack
+	 * and return it.
 	 * @return the point that remove or null if the stack is empty.
 	 */
 	public PatchPoint pop() {
@@ -77,8 +85,6 @@ public class PatchPackman {
 		
 		
 		PatchPoint cournetP =  patchPoints.get(getSize() - 2);
-		
-		
 		//time 
 		TotalTime = cournetP.getTime();
 		patchPoints.remove(removeP);
@@ -89,6 +95,10 @@ public class PatchPackman {
 		return removeP;
 	}
 	
+	/**
+	 * like top in stack data structure get the top point in the stack.
+	 * @return top PatchPoint.
+	 */
 	public PatchPoint top() {
 		if(getSize() == 0)
 			return null;
@@ -96,17 +106,10 @@ public class PatchPackman {
 		return patchPoints.get(getSize() - 1);
 	}
 
-
-
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "\nPatchPackman [TotalTime=" + TotalTime + ", packmanPointer=" + packmanPointer + "]";
 	}
-
-	
 
 	/**
 	 * @return the totalTime

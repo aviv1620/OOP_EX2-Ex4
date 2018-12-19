@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import Geom.Point3D;
-
+/**
+ * store packmans and fruits
+ * @author Aviv Vexler
+ *
+ */
 public class Game {
 	private ArrayList<Packman> packmens;
 	private ArrayList<Fruit> fruits;
@@ -29,8 +33,10 @@ public class Game {
 		//make the new packmen and add to list.
 		Packman packmen = new Packman(id, location, 0, 1, 1);
 		packmens.add(packmen);
+		////a-v-i-v-v-e-x-l-e-r.
 	}
 	
+	/**@param packmen - packmen to add.*/
 	public void addPackman(Packman packmen) {
 		packmens.add(packmen);
 	}
@@ -52,39 +58,39 @@ public class Game {
 		fruits.add(fruit);
 	}
 	
+	/** @param fruit - fruit to add.*/
 	public void addFruit(Fruit fruit) {
 		fruits.add(fruit);
 	}
 	
+	/**@return Iterator to packmans.*/
 	public Iterator<Packman> iteratorPackmen(){
 		return packmens.iterator();
 	}
 	
+	/** @param index - index to packmans.
+	 * @return - Packman.*/
 	public Packman getPackmen(int index) {
 		return packmens.get(index);
 	}
 	
+	/**@return Iterator to Fruit.*/
 	public Iterator<Fruit> iteratorFruit(){
 		return fruits.iterator();
 	}
 	
+	/** @return size packman*/
 	public int countPackmens() {
 		return packmens.size();
 	}
 	
-	/**
-	 * 
-	 * @return ArrayList fruit with another Pointer but same object.
-	 */
+	/*** @return ArrayList fruit with another Pointer but same object. */
 	public ArrayList<Fruit> CopyPointerFruit(){
 		ArrayList<Fruit> arrayList = new ArrayList<Fruit>();
 		arrayList.addAll(fruits);
 		return arrayList;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "Game [packmens=" + packmens + ", fruits=" + fruits + "]";
