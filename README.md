@@ -10,7 +10,7 @@ Go to main method in GUI.MyFrame.
 All buttons explained in manual [click hare](https://github.com/aviv1620/OOP_EX2-Ex4/wiki/Manual).
 
 ### class diagram
-Recommended start look in [Gui.gif](diagram.Gui.gif) from hare have link to all the diagram.
+Recommended start look in [Gui.gif](diagram/Gui.gif) from hare have link to all the diagram.
 
 ### shortest algorithm explanation
 in **algorithms.ShortestPathAlgo** class. if have RTL(right to left) problem read the [algorithm explanation.docx](algorithm_explanation.docx).
