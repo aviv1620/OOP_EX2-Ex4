@@ -6,7 +6,7 @@ Later this system make more thing.
 ## ex2
 
 ### play the game
-Go to main method in GUI.MyFrame.
+Go to main method in **GUI.MyFrame** class.
 All buttons explained in manual [click hare](https://github.com/aviv1620/OOP_EX2-Ex4/wiki/Manual).
 
 ### class diagram
