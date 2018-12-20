@@ -2,6 +2,8 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -28,7 +30,7 @@ public class Map extends JPanel{
 
 	/** version 1 maybe forever*/
 	private static final long serialVersionUID = 1L;
-	
+
 	// polar bound points.
 	public static final double TOP_LEFT_X = 35.2025;
 	public static final double TOP_LEFT_Y = 32.1057;
@@ -42,25 +44,29 @@ public class Map extends JPanel{
 	//varible
 	private Game game;
 	private Patch patch;
-	private BufferedImage img1;
-	 
+	private BufferedImage imgMap;
+	private BufferedImage imgPackman;
+
 	/**
 	 * load image to draw.
 	 * @throws IOException - {@link IOException}.
 	 */
 	public Map() throws IOException{
 		//image		
-		File imgFile = new File("Ariel1.png");
-		img1 = ImageIO.read(imgFile);				
+		File imgMapFile = new File("Ariel1.png");
+		imgMap = ImageIO.read(imgMapFile);
+
+		File imgPackmanFile = new File("Packman.png");
+		imgPackman= ImageIO.read(imgPackmanFile);
 	}
-	
+
 	/**@param game - game data structure to draw.
 	 * @param patch - patch data structure to draw.*/
 	public void setGameAndPatch(Game game,Patch patch) {
 		this.game = game;
 		this.patch = patch;
 	}
-	
+
 	/**Calls the UI delegate's paint method, if the UI delegate is non-null.
 	 * @param g - the Graphics object to protect
 	 */
@@ -68,13 +74,14 @@ public class Map extends JPanel{
 	protected void paintComponent(Graphics g) {		
 		int width = getWidth();
 		int Height = getHeight();
-		
+
 		//map
-		g.drawImage(img1, 0, 0,width,Height, null);
+		
+		g.drawImage(imgMap, 0, 0,width,Height, null);				
 
 		//game and patch
-		paintGame(g, game,width,Height);
 		paintPatch(g, patch,width,Height);
+		paintGame(g, game,width,Height);
 	}
 
 	/**
@@ -126,22 +133,6 @@ public class Map extends JPanel{
 		if(game == null)
 			return;
 
-		//packman
-		Iterator<Packman> packmanIterator = game.iteratorPackmen();
-		while(packmanIterator.hasNext()) {
-			//get point ans scale
-			Packman packman = packmanIterator.next();
-			Point3D point = polarPointToImage(packman.location);
-			point = scalePoint(point,wWidth,wHeight);
-			int radius = packman.radius*50;
-
-			//draw (maybe later is be image).
-			g.setColor(Color.yellow);
-			g.drawOval((int)(point.x() - radius/2 ), (int)(point.y() - radius/2), radius, radius);
-			g.fillOval((int)(point.x() - radius/2) , (int)(point.y() - radius/2), radius, radius);
-
-		}
-
 		//fruit
 		Iterator<Fruit> fruitIterator = game.iteratorFruit();
 		while(fruitIterator.hasNext()) {
@@ -155,6 +146,31 @@ public class Map extends JPanel{
 			g.setColor(Color.GREEN);
 			g.drawOval(((int)point.x() - radius/2), (int)(point.y() - radius/2), radius, radius);
 			g.fillOval((int)point.x() - radius/2, (int)point.y() - radius/2, radius, radius);
+
+		}
+
+		//packman
+		Iterator<Packman> packmanIterator = game.iteratorPackmen();
+		while(packmanIterator.hasNext()) {
+			//get point ans scale
+			Packman packman = packmanIterator.next();
+			Point3D point = polarPointToImage(packman.location);
+			point = scalePoint(point,wWidth,wHeight);
+			int radius = packman.radius*50;
+
+
+			//draw (maybe later is be image).
+			double x = point.x() - radius/2 ;
+			double y = point.y() - radius/2;
+			Graphics2D g2d=(Graphics2D)g;		
+			AffineTransform at = AffineTransform.getTranslateInstance(x, y);
+			at.rotate(Math.toRadians(packman.angle),radius/2,radius/2);
+			g2d.drawImage(imgPackman, at, null);
+			
+			//Circle
+			//g.setColor(Color.yellow);
+			//g.drawOval((int)(point.x() - radius/2 ), (int)(point.y() - radius/2), radius, radius);
+			//g.fillOval((int)(point.x() - radius/2) , (int)(point.y() - radius/2), radius, radius);
 
 		}
 
@@ -192,13 +208,13 @@ public class Map extends JPanel{
 
 				//draw line a point to b point.
 				g.drawLine((int)aPoint.x(), (int)aPoint.y(),(int) bPoint.x(),(int) bPoint.y());
-				
+
 			}
 
 
 		}
 	}
-	
+
 	/**
 	 * 
 	 * @param i - index

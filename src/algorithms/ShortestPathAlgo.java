@@ -142,7 +142,7 @@ public class ShortestPathAlgo {
 	 */
 	private void MoveLestPoint(PatchPackman a, PatchPackman b) {
 		PatchPoint f = a.pop();
-		b.push(f.getLocation());
+		b.push(f);
 	}
 
 	/**
@@ -198,7 +198,7 @@ public class ShortestPathAlgo {
 				}
 
 				//insert first
-				patchPackman.push(copyFruit.get(0).location);
+				patchPackman.push(copyFruit.get(0).location,copyFruit.get(0).Weight);
 
 				//remove from array
 				copyFruit.remove(0);

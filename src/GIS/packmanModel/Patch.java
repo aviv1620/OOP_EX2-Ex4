@@ -72,6 +72,19 @@ public class Patch {
 	public int getNumPackmens() {
 		return patchPackmans.length;
 	}
+	
+	/**
+	 * 
+	 * @return Scores table to all packmans.
+	 */
+	public String stringScore() {
+		String ans = "";
+		for (int i = 0; i < patchPackmans.length; i++) {
+			ans += "packman "+i+":"+patchPackmans[i].getScore()+", ";
+		}
+		
+		return ans;
+	}
 
 	@Override
 	public String toString() {

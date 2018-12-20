@@ -35,8 +35,18 @@ public class PatchPackman {
 		this.packmanPointer = packmanPointer;
 		
 		//packman it self is the first point.
-		PatchPoint patchPoint = new PatchPoint(cournetLocation, TotalTime);
+		PatchPoint patchPoint = new PatchPoint(cournetLocation, TotalTime,0);
 		patchPoints.add(patchPoint);
+	}
+	
+	/**
+	 * like push in stack data structure add new point.
+	 * calculate the time and cournet location is the lest point.
+	 * @param patchPoint - patchPointto add
+	 * @return - time to go to new point.
+	 */
+	public long push(PatchPoint patchPoint) {
+		return push(patchPoint.getLocation(),patchPoint.getWeight());
 	}
 
 	/**
@@ -45,7 +55,7 @@ public class PatchPackman {
 	 * @param newLocation - new location
 	 * @return - time to go to new point.
 	 */
-	public long push(Point3D newLocation) {
+	public long push(Point3D newLocation,int weight) {
 		//calculate time
 		double distance = myCoords.distance3d(cournetLocation, newLocation);
 		long time = (long) (distance/packmanPointer.speed);
@@ -54,7 +64,7 @@ public class PatchPackman {
 		TotalTime += time;
 		
 		//add point
-		PatchPoint patchPoint = new PatchPoint(newLocation, TotalTime);
+		PatchPoint patchPoint = new PatchPoint(newLocation, TotalTime,weight);
 		patchPoints.add(patchPoint);
 		
 		//now have new corrnet location.
@@ -136,6 +146,14 @@ public class PatchPackman {
 	 */
 	public PatchPoint get(int index) {
 		return patchPoints.get(index);
+	}
+	
+	public int getScore() {
+		int count = 0;
+		for(PatchPoint point:patchPoints) {
+			count += point.getWeight();
+		}
+		return count;
 	}
 	
 	/**

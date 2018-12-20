@@ -31,7 +31,7 @@ public class Game {
 		}
 		
 		//make the new packmen and add to list.
-		Packman packmen = new Packman(id, location, 0, 1, 1);
+		Packman packmen = new Packman(id, location, 1, 1);
 		packmens.add(packmen);
 		////a-v-i-v-v-e-x-l-e-r.
 	}

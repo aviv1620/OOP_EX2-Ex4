@@ -12,6 +12,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.filechooser.FileNameExtensionFilter;
+
+import Coords.MyCoords;
 import File_format.Csv2Game;
 import File_format.Path2KML;
 import GIS.packmanModel.Game;
@@ -63,11 +65,13 @@ public class MyFrame extends JFrame {
 	private String fileName = "default.kml";
 	private Simulate simulate;
 
+	private MyCoords myCoords = new MyCoords();
+	
 	enum SelectedObject{non,packmen,fruit};
 	private SelectedObject selectedObject = SelectedObject.non;
 
 	//run automatic game_1543684662657.csv to test faster my code/
-	private static boolean CHEAT_1543693911932CSV = false;
+	private boolean CHEAT_1543693911932CSV;
 
 	/**
 	 * configured all the buttons and gui setting.
@@ -76,7 +80,9 @@ public class MyFrame extends JFrame {
 	 * @param h - Height screen.
 	 * @throws IOException - Signals that an I/O exception of some sort has occurred.
 	 */
-	public MyFrame(int w,int h) throws IOException{
+	public MyFrame(int w,int h,boolean cheat) throws IOException{
+		this.CHEAT_1543693911932CSV = cheat;
+		
 		//file open 
 		filterCSV = new FileNameExtensionFilter("csv onely","csv");	
 		filterKML = new FileNameExtensionFilter("kml onely","kml");	
@@ -375,7 +381,8 @@ public class MyFrame extends JFrame {
 	private void itemSort() {
 		ShortestPathAlgo algo = new ShortestPathAlgo(game);
 		patch = algo.getPatch();
-		System.out.println(fileName + " run in: " + algo.getTimeToComplete() + " ms");
+		System.out.println(fileName + " run in: " + algo.getTimeToComplete() + " ms.");
+		System.out.println(patch.stringScore());
 
 		repaint();
 	}
@@ -427,7 +434,7 @@ public class MyFrame extends JFrame {
 	 * @throws IOException - {@link IOException}
 	 */
 	public static void main(String[] args) throws IOException {
-		new MyFrame((int)(1433/1.5),(int)(642/1.5));
+		new MyFrame((int)(1433/1.5),(int)(642/1.5),false);
 	}	
 
 	/**
@@ -505,6 +512,9 @@ public class MyFrame extends JFrame {
 							//loaction
 							packman.location = new Point3D(x,y,0);							
 							allPackmanStop = false;
+							
+							//angle
+							packman.angle = myCoords.azimuth_elevation_dist(ap.getLocation(), bp.getLocation())[0];
 						}
 
 					}

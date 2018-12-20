@@ -57,7 +57,7 @@ public class Csv2Game {
 					int radius = Integer.parseInt(userInfo[6]);
 					
 					//add packmen.
-					Packman packman = new Packman(id,location, 0, speed, radius);
+					Packman packman = new Packman(id,location, speed, radius);
 					game.addPackman(packman);
 					
 				}else if(type.equals("F")) {//parse fruit.

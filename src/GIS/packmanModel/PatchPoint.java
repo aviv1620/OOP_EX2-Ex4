@@ -9,9 +9,12 @@ import Geom.Point3D;
 public class PatchPoint {
 	private Point3D location;
 	private int time;
-	public PatchPoint(Point3D location, int time) {
+	private int weight;
+	
+	public PatchPoint(Point3D location, int time,int weight) {
 		this.location = location;
 		this.time = time;
+		this.weight = weight;
 	}
 	/**
 	 * @return the location
@@ -24,6 +27,14 @@ public class PatchPoint {
 	 */
 	public int getTime() {
 		return time;
+	}
+	
+	/**
+	 * 
+	 * @return weight
+	 */
+	public int getWeight() {
+		return weight;
 	}
 
 	@Override

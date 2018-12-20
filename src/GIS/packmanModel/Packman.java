@@ -21,11 +21,11 @@ public class Packman {
 	 * @param speed - speed.
 	 * @param radius - radius.
 	 */
-	public Packman(int id,Point3D location, double angale, int speed, int radius) {
+	public Packman(int id,Point3D location, int speed, int radius) {
 		super();
 		this.id = id;
 		this.location = location;
-		this.angle = angale;
+		this.angle = 90;
 		this.speed = speed;
 		this.radius = radius;
 	}
