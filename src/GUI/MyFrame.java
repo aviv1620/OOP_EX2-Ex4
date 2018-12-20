@@ -82,6 +82,10 @@ public class MyFrame extends JFrame {
 	 */
 	public MyFrame(int w,int h,boolean cheat) throws IOException{
 		this.CHEAT_1543693911932CSV = cheat;
+		//play music
+		SimplePlayer player = new SimplePlayer("Pokemon Theme Song (8-Bit).mp3");
+		Thread t = new Thread(player);
+		t.start();
 		
 		//file open 
 		filterCSV = new FileNameExtensionFilter("csv onely","csv");	
@@ -453,6 +457,8 @@ public class MyFrame extends JFrame {
 		 * i add more time and sleep the thread for 15 ms'*/
 		@Override
 		public void run() {
+			
+			//move packmans
 			int time = 1;
 			boolean allPackmanStop = false;
 
